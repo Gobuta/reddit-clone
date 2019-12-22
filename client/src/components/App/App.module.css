@@ -11,9 +11,19 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --dark-blue: rgb(14, 30, 40);
+  --blue: rgb(16, 35, 48);
+  --light-blue: rgb(15, 46, 66);
+  --lighter-blue: rgb(22, 56, 86);
 }
 
 .app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
