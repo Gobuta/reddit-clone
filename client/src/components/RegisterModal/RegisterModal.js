@@ -5,7 +5,7 @@ import FormInput from '../FormInput';
 import { FaUser, FaLock, FaUnlock } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-export const RegisterModal = () => {
+export const RegisterModal = ({ open, toggleRegister }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +14,7 @@ export const RegisterModal = () => {
   const update = fn => e => fn(e.target.value);
 
   return (
-    <Modal>
+    <Modal open={open} close={toggleRegister}>
       <form className={styles.register__form}>
         <FormInput
           type="text"
@@ -50,6 +50,10 @@ export const RegisterModal = () => {
         </FormInput>
         <button className={styles.register__button}>Register</button>
       </form>
+      <span className={styles.register__tip}>
+        Already have an account?{' '}
+        <button className={styles.register__login}>Log In</button>
+      </span>
     </Modal>
   );
 };
