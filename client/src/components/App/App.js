@@ -4,6 +4,7 @@ import styles from './App.module.css';
 import Home from '../../routes/Home';
 import Header from '../Header';
 import RegisterModal from '../RegisterModal';
+import LoginModal from '../LoginModal';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <BrowserRouter>
         <Header />
         <RegisterModal />
+        <LoginModal />
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>

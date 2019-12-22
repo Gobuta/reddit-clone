@@ -1,39 +1,35 @@
-.register__form {
+.login__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 1em;
 }
 
-.register__form > *:not(:last-child) {
+.login__form > *:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.register__button {
+.login__button {
   font-size: 1rem;
   font-weight: 700;
+  color: var(--lighter-blue);
   padding: 0.5em;
   border: none;
   border-radius: 3px;
-  background: white;
-  color: var(--lighter-blue);
-  cursor: pointer;
 }
 
-.register__tip {
+.login__tip {
   font-size: 0.8rem;
   font-weight: 300;
   color: white;
-  margin-top: 2em;
 }
 
-.register__login {
+.login__register {
   font-size: 0.8rem;
   font-weight: 700;
   color: white;
   background: none;
   border: none;
-  outline: none;
   padding: 0;
   cursor: pointer;
   margin-left: 0.2em;
