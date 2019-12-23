@@ -19,6 +19,7 @@ body {
   --blue: rgb(16, 35, 48);
   --light-blue: rgb(15, 46, 66);
   --lighter-blue: rgb(22, 56, 86);
+  --red: rgb(187, 51, 65);
 }
 
 .app {

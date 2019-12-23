@@ -25,3 +25,12 @@
 .input::placeholder {
   color: white;
 }
+
+.form__input__error {
+  font-size: 0.8rem;
+  color: var(--red);
+}
+
+.error__border {
+  border: 1px solid var(--red);
+}
